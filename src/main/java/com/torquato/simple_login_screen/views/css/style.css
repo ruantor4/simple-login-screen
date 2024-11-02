@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@media screen {
+    .col{
+        margin: 1em 2em;
+    }
+}
+
+h1{
+    margin-top: 200px;
+    margin-bottom: 20px;
+    color: azure;
+}
+
+body{
+    background-color: black;
+    
+}
+
+.box, form{
+   
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+input{
+    height: 30px;
+    width: 250px;
+    border-radius: 25px;
+    padding: 0 10px 0 10px  ;
+    font-size: small;
+   
+}
+button{
+    height: 25px;
+    width: 100px;
+
+}
