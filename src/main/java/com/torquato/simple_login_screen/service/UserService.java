@@ -11,5 +11,11 @@ public class UserService {
     @Autowired
     public UserRepository repository;
 
+    public boolean authenticate(String username, String password){
+            return repository.findByUsername(username)
+            .map(user -> user.getPassword().equals(password))
+            .orElse(false);
+
+    }
     
 }
